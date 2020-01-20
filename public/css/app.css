@@ -1,7 +1,8 @@
-//
 .col-6 > ul > li:nth-child(odd) {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
+
 .col-6 > ul > li:nth-child(even) {
-    background-color: lightyellow;
+  background-color: lightyellow;
 }
+

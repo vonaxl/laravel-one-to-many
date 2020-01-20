@@ -4,8 +4,16 @@
     <ul>
         @foreach ($emps as $emp)
             <li>
-                {{ $emp -> name }} {{ $emp -> lastname}}:
-                {{ $emp -> tasks() -> count() }}
+                {{ $emp -> name }} {{ $emp -> lastname}} 
+                [task done : {{ $emp -> tasks() -> count() }} ] <br>
+                <ul>
+                    @foreach ($emp ->tasks as $task)
+                        <li>
+                            {{$task -> name}}
+                        </li>
+                    @endforeach
+                    
+                </ul>
             </li>
         @endforeach
     </ul>
@@ -15,10 +23,10 @@
 <ul>
     @foreach ($tasks as $task)
         <li>
-            task name: {{ $task -> name }} <br>
-            task description: {{ $task -> description }} <br>
-            {{ $task -> start_date }} <br>
-            employee : {{$task -> employee -> name}}
+            Task name: {{ $task -> name }} <br>
+            Description: {{ $task -> description }} <br>
+            Date: {{ $task -> start_date }} <br>
+            Employee : {{$task -> employee -> name}}
         </li>
     @endforeach
 </ul>
