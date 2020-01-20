@@ -11,5 +11,6 @@
 |
 */
 
-Route::get('/employee', 'EmployeeController@index');
+// Route::get('/employee', 'EmployeeController@index');
+Route::resource('/employee', 'EmployeeController');
 // Route::resource('/task', 'TaskController');

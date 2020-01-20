@@ -80,8 +80,16 @@ class EmployeeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id,$elem)
     {
-        //
+        // if ($elem=='t') {
+        //     $task = Task::findorFail($id);
+        //     $task = delete();
+        // }if ($elem=='e') {
+        //     $emp = Employee::findorFail($id);
+        //     $emp = delete();
+        // }
+        // return redirect('/employee');
+        
     }
 }

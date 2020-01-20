@@ -1,15 +1,25 @@
 //
-.emps > ul > li:nth-child(odd),
-.tasks > ul > li:nth-child(odd) {
+.box:nth-child(odd) {
     background-color: lightgrey;
 }
-.emps > ul > li:nth-child(even),
-.tasks > ul > li:nth-child(even) {
+.box:nth-child(even) {
     background-color: lightyellow;
 }
 .emps,
 .tasks {
-    margin-top: 3rem;
+    padding: 1.4rem 0;
+    margin-top: 2rem;
     height: 70vh;
     overflow-y: auto;
+}
+
+.box {
+    padding: 0.5rem 1rem;
+    position: relative;
+
+    .close {
+        position: absolute;
+        top: 0.5;
+        right: 0.5rem;
+    }
 }
