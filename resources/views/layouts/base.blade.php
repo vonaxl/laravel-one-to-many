@@ -12,17 +12,23 @@
     <div class="container">
         
         <header class="text-center">
-            <h1>HELLO TO EVERY EMPLOYEE</h1>
+            <h1>RELAZIONI TRA TABELLE (1 A MOLTI)</h1>
         </header>
         
         <div class="row">
 
-            <div class="col-6">
-                @yield('employee')
+            <div class="col-6 ">
+                <h2>Employee: {{ $emps -> count() }}</h2>
+                <div class="emps">
+                    @yield('employee')
+                </div>
             </div>
             
-            <div class="col-6">
-                @yield('task')
+            <div class="col-6 ">
+                <h2>Tasks: {{ $tasks -> count() }}</h2>
+                <div class="tasks">
+                    @yield('task')
+                </div>
             </div>
 
         </div>

@@ -1,6 +1,5 @@
 @extends('layouts.base')
 @section('employee')
-    <h1>Employee: {{ $emps -> count() }}</h1>
     <ul>
         @foreach ($emps as $emp)
             <li>
@@ -18,8 +17,8 @@
         @endforeach
     </ul>
 @endsection
+
 @section('task')
-<h1>Tasks: {{ $tasks -> count() }}</h1>
 <ul>
     @foreach ($tasks as $task)
         <li>

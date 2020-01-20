@@ -1,8 +1,17 @@
-.col-6 > ul > li:nth-child(odd) {
+.emps > ul > li:nth-child(odd),
+.tasks > ul > li:nth-child(odd) {
   background-color: lightgrey;
 }
 
-.col-6 > ul > li:nth-child(even) {
+.emps > ul > li:nth-child(even),
+.tasks > ul > li:nth-child(even) {
   background-color: lightyellow;
+}
+
+.emps,
+.tasks {
+  margin-top: 3rem;
+  height: 70vh;
+  overflow-y: auto;
 }
 
